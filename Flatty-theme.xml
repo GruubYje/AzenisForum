@@ -163,7 +163,7 @@ ol, ul, li {
 #panel .lower {
 	background: #3D3C3C; 
 	color: #999;
-	border-bottom: 1px solid #e3e3e3;
+	border-bottom: 1px solid black;
 	padding: 0.725em;
     padding-top: 0.875em; 
 }
@@ -205,8 +205,8 @@ ol, ul, li {
 
 #footer .upper {
 	background: #3D3C3C; 
-	border-top: 1px solid #bbb;
-	border-bottom: 1px solid #bbb;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 	padding: 6px;
 	font-size: 12px;
 	overflow: hidden; 
@@ -243,7 +243,7 @@ ol, ul, li {
     padding: 2rem;
     color: #888;
     font-size: 13px;
-	border-top: 2px solid #ddd;
+	border-top: 2px solid black;
 }
 
 #footer .uppermid a:link,
@@ -253,7 +253,7 @@ ol, ul, li {
 
 #footer .lower {
 	overflow: hidden;
-	border-top: 1px solid rgb(235, 241, 247);
+	border-top: 1px solid black;
 	color: #90a4ae;
 	padding: 1.5em 1.8em;
 	line-height: 18px;
