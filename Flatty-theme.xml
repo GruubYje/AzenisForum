@@ -3475,14 +3475,14 @@ jQuery(function($) {
 <table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
 	<tr>
 		<td class="thead side">
-			<strong>Custom Sidebox</strong>
+			<strong>Wiadomosci</strong>
 			<div class="float_right" style="padding-top: 5px;"><i class="fa fa-newspaper-o"></i></div>
 		</td>
 	</tr>
 	<tr>
 		<td class="trow1">
 			<span class="smalltext fw4">
-				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam..
+				Ważne! Niedługo startuje nasz serwer MINECRAFT - tryb HardCore! Musisz być..
 			</span>
 		</td>
 	</tr>
