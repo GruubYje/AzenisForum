@@ -30,9 +30,11 @@ body {
 #pasek {
 	color: #FF0000;
 	border: 1px solid #FF0000;
+	background-color: #3D3C3C;
 }
 
 #naglowek {
+	border: 1px solid #FF0000;
 	background-color: #3D3C3C;
 }
 
