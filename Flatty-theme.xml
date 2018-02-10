@@ -15,7 +15,7 @@
 	<![CDATA[
 body {
 	background: #3D3C3C;
-	color: #555;
+	color: #FF0000;
 	text-align: center;
 	line-height: 1.431;
 	margin: 0;
@@ -29,12 +29,12 @@ body {
 
 a:link {
 	transition: all .12s ease !important;
-	color: #3c699c;
+	color: #FF0000;
 	text-decoration: none; 
 }
 
 a:visited {
-	color: #0072bc;
+	color: #FF0000;
 	text-decoration: none; 
 }
 
@@ -56,7 +56,7 @@ ol, ul, li {
 #container {
 	font-family: "Open Sans", Arial, Tahoma, sans-serif;
 	text-align: left;
-	color: #555;
+	color: #FF0000;
 	line-height: 1.431;
 	margin: 0;
 	font-size: 13px;
@@ -105,7 +105,7 @@ ol, ul, li {
 #header ul.menu li a {
 	padding-left: 21px;
 	display: inline-block;
-	color: #fff;
+	color: #FF0000;
 }
 
 #logo ul.top_links {
@@ -156,13 +156,13 @@ ol, ul, li {
 #panel .upper a:visited,
 #panel .upper a:active { color: #fff; }
 #panel .upper a:hover { 
-	color: #bbdefb; 
+	color: #FF0000; 
 	text-decoration: none; 
 }
 
 #panel .lower {
 	background: #3D3C3C; 
-	color: #999;
+	color: #FF0000;
 	border-bottom: 1px solid black;
 	padding: 0.725em;
     padding-top: 0.875em; 
@@ -241,7 +241,7 @@ ol, ul, li {
 	overflow: hidden;
 	background: #3D3C3C; 
     padding: 2rem;
-    color: #888;
+    color: #FF0000;
     font-size: 13px;
 	border-top: 2px solid #FF0000;
 }
@@ -254,7 +254,7 @@ ol, ul, li {
 #footer .lower {
 	overflow: hidden;
 	border-top: 1px solid #FF0000;
-	color: #90a4ae;
+	color: #FF0000;
 	padding: 1.5em 1.8em;
 	line-height: 18px;
 	font-size: 13px;
@@ -265,13 +265,13 @@ ol, ul, li {
 #footer .lower a:visited { color: #78909c; }
 #footer .lower a:hover,
 #footer .lower a:active {
-	color: #555; 
+	color: #FF0000; 
 	text-decoration: none; 
 }
 
 #footer .lower #social {
 	float: right;
-	color: #999;
+	color: #FF0000;
 	margin-top: -17px; 
 }
 
@@ -307,7 +307,7 @@ ol, ul, li {
 .forum_status i {
 	display: inline-block;
 	line-height: 50px;
-	color: #8fa8f6; 
+	color: #FF0000;  
 }
 
 .forum_on { color: #0094d1; }
@@ -333,7 +333,7 @@ ol, ul, li {
 .subforum_miniofflink i:before { content: "\f0c1"; }
 
 table {
-	color: #555;
+	color: #FF0000 ; 
 	font-size: 14px;
 	font-family: inherit; 
 }
