@@ -14,7 +14,7 @@
 		<stylesheet name="global.css" version="1814">
 	<![CDATA[
 body {
-	background: #3D3C3C;
+	background: #2B2B2B;
 	color: #FF0000;
 	text-align: center;
 	line-height: 1.431;
@@ -92,7 +92,7 @@ ol, ul, li {
 	width: auto !important;
 	padding: 40px 10px;
 	overflow: hidden;
-	background: #3D3C3C; 
+	background: #2B2B2B; 
 }
 
 #header ul.menu {
@@ -127,13 +127,13 @@ ol, ul, li {
 #panel .upper a.login,
 #panel .upper a.lost_password {
 	padding: 7px 21px 7px 20px;
-    background: #3D3C3C; 
+    background: #2B2B2B; 
 }
 
 #panel .upper a.register {
 	padding: 7px 21px 7px 20px;
 	margin-left: 7px;
-	background: #3D3C3C;
+	background: #2B2B2B;
 }
 
 #panel .upper a.login:hover { background: #6e88ea; color: #fff; }
@@ -149,7 +149,7 @@ ol, ul, li {
 }
 
 #panel .upper {
-	background: #3D3C3C; 
+	background: #2B2B2B; 
 	color: #fff;
 	clear: both;
 	height: 64px;
@@ -166,7 +166,7 @@ ol, ul, li {
 }
 
 #panel .lower {
-	background: #3D3C3C; 
+	background: #2B2B2B; 
 	color: #FF0000;
 	border-bottom: 1px solid black;
 	padding: 0.725em;
@@ -209,7 +209,7 @@ ol, ul, li {
 }
 
 #footer .upper {
-	background: #3D3C3C; 
+	background: #2B2B2B; 
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	padding: 6px;
@@ -244,7 +244,7 @@ ol, ul, li {
 
 #footer .uppermid {
 	overflow: hidden;
-	background: #3D3C3C; 
+	background: #2B2B2B; 
     padding: 2rem;
     color: #FF0000;
     font-size: 13px;
@@ -263,7 +263,7 @@ ol, ul, li {
 	padding: 1.5em 1.8em;
 	line-height: 18px;
 	font-size: 13px;
-	background: #3D3C3C; 
+	background: #2B2B2B; 
 }
 
 #footer .lower a:link,
@@ -365,7 +365,7 @@ table {
 }
 
 .thead.side {
-	background: #3D3C3C;
+	background: #2B2B2B;
 	padding: 1rem 1.2rem .9rem 1.2rem;
 }
 
@@ -394,7 +394,7 @@ table {
 }
 
 .tcat {
-	background: #3D3C3C;
+	background: #2B2B2B;
 	font-size: 12px;
 	box-sizing: border-box;
 	padding: 11px 20px 9px 18px;
@@ -407,7 +407,7 @@ table {
 .tcat a:active { color: #9e906e; }
 
 .trow1 {
-	background: #3D3C3C;
+	background: #2B2B2B;
 	padding: 1.025em 1.275em 0.875em 1.175em; 
 }
 
@@ -418,7 +418,7 @@ table {
 }
 
 .trow_shaded {
-	background: #3D3C3C;
+	background: #2B2B2B;
 	border: 0; 
 }
 
