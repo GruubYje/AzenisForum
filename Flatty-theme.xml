@@ -11,7 +11,9 @@
 		<disporder><![CDATA[a:7:{s:10:"global.css";i:1;s:8:"css3.css";i:2;s:16:"star_ratings.css";i:3;s:17:"thread_status.css";i:4;s:14:"showthread.css";i:5;s:10:"usercp.css";i:6;s:9:"modcp.css";i:7;}]]></disporder>
 	</properties>
 	<stylesheets>
-		<stylesheet name="global.css" version="1814"><![CDATA[body {
+		<stylesheet name="global.css" version="1814">
+	<![CDATA[
+body {
 	background: #3D3C3C;
 	color: #555;
 	text-align: center;
@@ -85,7 +87,7 @@ ol, ul, li {
 	width: auto !important;
 	padding: 40px 10px;
 	overflow: hidden;
-	background: rgb(61, 60, 60); 
+	background: #3D3C3C; 
 }
 
 #header ul.menu {
@@ -120,13 +122,13 @@ ol, ul, li {
 #panel .upper a.login,
 #panel .upper a.lost_password {
 	padding: 7px 21px 7px 20px;
-    background: #2c82c9;
+    background: #3D3C3C; 
 }
 
 #panel .upper a.register {
 	padding: 7px 21px 7px 20px;
 	margin-left: 7px;
-	background: #d98b3a;
+	background: #3D3C3C;
 }
 
 #panel .upper a.login:hover { background: #6e88ea; color: #fff; }
@@ -142,7 +144,7 @@ ol, ul, li {
 }
 
 #panel .upper {
-	background: #262e38;
+	background: #3D3C3C; 
 	color: #fff;
 	clear: both;
 	height: 64px;
@@ -159,7 +161,7 @@ ol, ul, li {
 }
 
 #panel .lower {
-	background: #3D3C3C;
+	background: #3D3C3C; 
 	color: #999;
 	border-bottom: 1px solid #e3e3e3;
 	padding: 0.725em;
@@ -202,7 +204,7 @@ ol, ul, li {
 }
 
 #footer .upper {
-	background: #efefef;
+	background: #3D3C3C; 
 	border-top: 1px solid #bbb;
 	border-bottom: 1px solid #bbb;
 	padding: 6px;
@@ -237,7 +239,7 @@ ol, ul, li {
 
 #footer .uppermid {
 	overflow: hidden;
-	background: #fff;
+	background: #3D3C3C; 
     padding: 2rem;
     color: #888;
     font-size: 13px;
@@ -256,7 +258,7 @@ ol, ul, li {
 	padding: 1.5em 1.8em;
 	line-height: 18px;
 	font-size: 13px;
-	background: #fff;
+	background: #3D3C3C; 
 }
 
 #footer .lower a:link,
