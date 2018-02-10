@@ -360,7 +360,7 @@ table {
 }
 
 .thead.side {
-	background: #494d5d;
+	background: #3D3C3C;
 	padding: 1rem 1.2rem .9rem 1.2rem;
 }
 
