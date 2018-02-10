@@ -3293,9 +3293,7 @@ jQuery(function($) {
 	var modal_zindex = 9999;
 // -->
 </script>]]></template>
-		<template name="header_menu_calendar" version="1806"><![CDATA[<li><a href="{$mybb->settings['bburl']}/calendar.php"><i class="fa fa-calendar-check-o"></i> {$lang->toplinks_calendar}</a></li>]]></template>
 		<template name="header_menu_memberlist" version="1806"><![CDATA[<li><a href="{$mybb->settings['bburl']}/memberlist.php"><i class="fa fa-users"></i> {$lang->toplinks_memberlist}</a></li>]]></template>
-		<template name="header_menu_portal" version="1806"><![CDATA[<li><a href="{$mybb->settings['bburl']}/portal.php"><i class="fa fa-globe"></i> {$lang->toplinks_portal}</a></li>]]></template>
 		<template name="header_menu_search" version="1806"><![CDATA[<li><a href="{$mybb->settings['bburl']}/search.php"><i class="fa fa-search"></i> {$lang->toplinks_search}</a></li>]]></template>
 		<template name="header_quicksearch" version="1806"><![CDATA[						<form action="{$mybb->settings['bburl']}/search.php" method="post">
 						<fieldset id="search">
@@ -3351,7 +3349,7 @@ jQuery(function($) {
 		$("#quick_login input[name='url']").val($(location).attr('href'));
 	</script>
 	<ul class="menu top_links">
-		<li><a href="{$mybb->settings['bburl']}/sklep.php">Sklep 24/7</a></li>
+		<li><a href="{$mybb->settings['bburl']}/sklep.php"></a></li>
 		<li><a href="{$mybb->settings['bburl']}/search.php">{$lang->toplinks_search}</a></li>
 		<li><a href="{$mybb->settings['bburl']}/memberlist.php">{$lang->toplinks_memberlist}</a></li>
 		<li><a href="{$mybb->settings['bburl']}/misc.php?action=help" class="help">{$lang->toplinks_help}</a></li>
@@ -3405,6 +3403,7 @@ jQuery(function($) {
 </span>
 			<ul class="menu top_links">
 				<li><a href="{$mybb->settings['bburl']}/search.php">{$lang->toplinks_search}</a></li>
+				<li><a href="{$mybb->settings['bburl']}/sklep.php">{$lang->toplinks_sklep}</a></li>
 				<li><a href="{$mybb->settings['bburl']}/memberlist.php">{$lang->toplinks_memberlist}</a></li>
 				<li><a href="{$mybb->settings['bburl']}/misc.php?action=help" class="help">{$lang->toplinks_help}</a></li>
 			</ul>
