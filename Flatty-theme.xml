@@ -27,6 +27,12 @@ body {
 	vertical-align: baseline;
 }
 
+#odkryj {
+	high: 48px;
+	width: 70px;
+	flaot: right;
+}
+
 #pasek {
 	color: #FF0000;
 	border: 1px solid #FF0000;
@@ -3480,6 +3486,14 @@ jQuery(function($) {
 {$header}
 <div class="forums" style="float: left; width: 76%;">{$forums}</div>
 <div class="sidebar" style="float: right; width: 22%;">
+
+<div id = "odkryj">
+	<span class="toggle-container">
+		<a class="rightbutton" title="Hide Sidebar"><i class="fa fa-compress"></i></a>
+		<a class="leftbutton" title="Show Sidebar"><i class="fa fa-expand"></i></a>
+	</span>
+</div>
+
 <table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
 	<tr>
 		<td class="thead side" id='naglowek'>
@@ -4516,11 +4530,7 @@ if(use_xmlhttprequest == "1")
 	});
 </script>]]></template>
 		<template name="multipage_start" version="1806"><![CDATA[<a href="{$page_url}" class="pagination_first">1</a> {$lang->multipage_link_start}]]></template>
-		<template name="nav" version="1810"><![CDATA[
-	<span class="toggle-container">
-		<a class="rightbutton" title="Hide Sidebar"><i class="fa fa-compress"></i></a>
-		<a class="leftbutton" title="Show Sidebar"><i class="fa fa-expand"></i></a>
-	</span>]]>
+		<template name="nav" version="1810"><![CDATA[]]>
 	</template>
 		<template name="nav_bit" version="1806"><![CDATA[<a href="{$navbit['url']}" class="clr_wht">{$navbit['name']}</a>{$sep}]]></template>
 		<template name="nav_bit_active" version="1806"><![CDATA[<span class="active">{$navbit['name']}</span>]]></template>
