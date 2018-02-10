@@ -27,6 +27,11 @@ body {
 	vertical-align: baseline;
 }
 
+#pasek {
+	color: #FF0000;
+	border: 1px solid #FF0000;
+}
+
 a:link {
 	transition: all .12s ease !important;
 	color: #FF0000;
@@ -3477,7 +3482,7 @@ jQuery(function($) {
 		</td>
 	</tr>
 	<tr>
-		<td class="trow1">
+		<td class="trow1" id="pasek">
 			<span class="smalltext fw4">
 				Ważne! Niedługo startuje nasz serwer MINECRAFT - tryb HardCore! Musisz być..
 			</span>
@@ -3492,7 +3497,7 @@ jQuery(function($) {
 		</td>
 	</tr>
 	<tr>
-		<td class="trow1">
+		<td class="trow1" id="pasek">
 			{$whosonline}
 		</td>
 	</tr>
@@ -3505,7 +3510,7 @@ jQuery(function($) {
 		</td>
 	</tr>
 	<tr>
-		<td class="trow1">
+		<td class="trow1" id="pasek">
 			{$forumstats}
 		</td>
 	</tr>
