@@ -243,7 +243,7 @@ ol, ul, li {
     padding: 2rem;
     color: #888;
     font-size: 13px;
-	border-top: 2px solid black;
+	border-top: 2px solid #FF0000;
 }
 
 #footer .uppermid a:link,
@@ -253,7 +253,7 @@ ol, ul, li {
 
 #footer .lower {
 	overflow: hidden;
-	border-top: 1px solid black;
+	border-top: 1px solid #FF0000;
 	color: #90a4ae;
 	padding: 1.5em 1.8em;
 	line-height: 18px;
@@ -350,7 +350,7 @@ table {
 }
 
 .thead {
-	background: #2c82c9;
+	background: #3D3C3C;
 	color: #fff;
 	font-family: inherit;
 	font-size: 14px;
