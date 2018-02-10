@@ -389,7 +389,7 @@ table {
 }
 
 .tcat {
-	background: #e3e8f0;
+	background: #3D3C3C;
 	font-size: 12px;
 	box-sizing: border-box;
 	padding: 11px 20px 9px 18px;
@@ -402,20 +402,18 @@ table {
 .tcat a:active { color: #9e906e; }
 
 .trow1 {
-	opacity: 40%;
 	background: #3D3C3C;
-	border-bottom: 1px solid black;
 	padding: 1.025em 1.275em 0.875em 1.175em; 
 }
 
 .trow2 {
-	background: rgb(250, 251, 252);
-	border-bottom: 1px solid #f0f0f0;
+	background: #2B2B2B;
+	border: 1px solid #;
 	padding: 1.025em 1.275em 0.875em 1.175em; 
 }
 
 .trow_shaded {
-	background: #e4f6eb;
+	background: #3D3C3C;
 	border: 0; 
 }
 
