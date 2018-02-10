@@ -3243,9 +3243,6 @@ jQuery(function($) {
 		<template name="header" version="1813"><![CDATA[<div id="container">
 	<a name="top" id="top"></a>
 	<div id="header">
-		<div id="logo">
-			Tu bedzie kiedys logo
-		</div>
 		<div id="sticky-container">
 		<div id="fake-panel"></div>
 		<div id="panel">
@@ -3375,7 +3372,7 @@ jQuery(function($) {
 	</script>
 	<ul class="menu top_links">
 		<li><a href="{$mybb->settings['bburl']}/portal.php">{$lang->toplinks_portal}</a></li>
-		<li><a href="{$mybb->settings['bburl']}/index.php">Forums</a></li>
+		<li><a href="{$mybb->settings['bburl']}/index.php">Forum</a></li>
 		<li><a href="{$mybb->settings['bburl']}/search.php">{$lang->toplinks_search}</a></li>
 		<li><a href="{$mybb->settings['bburl']}/memberlist.php">{$lang->toplinks_memberlist}</a></li>
 		<li><a href="{$mybb->settings['bburl']}/calendar.php">{$lang->toplinks_calendar}</a></li>
@@ -3396,22 +3393,22 @@ jQuery(function($) {
 </div>]]></template>
 		<template name="header_welcomeblock_member" version="1813"><![CDATA[<!-- Continuation of div(class="upper") as opened in the header template -->
 <span class="float_left">
-	<a href="" id="ddnmenu">Welcome back, {$mybb->user['username']} <i class="fa fa-caret-down"></i></a>
+	<a href="" id="ddnmenu">Witaj ponownie, {$mybb->user['username']} <i class="fa fa-caret-down"></i></a>
 			<div id="ddnmenu_popup" class="popup_menu pedit--adj" style="display: none;">
 				<div class="popup_item_container">
-					<a href="{$mybb->settings['bburl']}/usercp.php" class="popup_item">User Panel<i class="fa fa-user menuadj"></i></a>
+					<a href="{$mybb->settings['bburl']}/usercp.php" class="popup_item">Panel użytkownika<i class="fa fa-user menuadj"></i></a>
 				</div>
 				<div class="popup_item_container">
-					<a href="{$mybb->settings['bburl']}/usercp.php?action=profile" class="popup_item">Edit Profile<i class="fa fa-pencil menuadj"></i></a>
+					<a href="{$mybb->settings['bburl']}/usercp.php?action=profile" class="popup_item">Edytuj profil<i class="fa fa-pencil menuadj"></i></a>
 				</div>
 				<div class="popup_item_container">
-					<a href="{$mybb->settings['bburl']}/usercp.php?action=options" class="popup_item">Edit Options<i class="fa fa-cogs menuadj"></i></a>
+					<a href="{$mybb->settings['bburl']}/usercp.php?action=options" class="popup_item">Edytuj opcje<i class="fa fa-cogs menuadj"></i></a>
 				</div>
 				<div class="popup_item_container">
-					<a href="{$mybb->settings['bburl']}/usercp.php?action=avatar" class="popup_item">Edit Avatar<i class="fa fa-picture-o menuadj"></i></a>
+					<a href="{$mybb->settings['bburl']}/usercp.php?action=avatar" class="popup_item">Zmień awatar<i class="fa fa-picture-o menuadj"></i></a>
 				</div>
 				<div class="popup_item_container">
-					<a href="{$mybb->settings['bburl']}/usercp.php?action=editsig" class="popup_item" style="padding-bottom: 4px;">Edit Signature<i class="fa fa-paint-brush menuadj"></i></a>
+					<a href="{$mybb->settings['bburl']}/usercp.php?action=editsig" class="popup_item" style="padding-bottom: 4px;">Zmień sygnature<i class="fa fa-paint-brush menuadj"></i></a>
 				</div>
 				<div class="popup_item_container">
 					<a href="{$mybb->settings['bburl']}/member.php?action=logout&amp;logoutkey={$mybb->user['logoutkey']}" class="popup_item">{$lang->welcome_logout}!<i class="fa fa-power-off menuadj"></i>
@@ -3475,8 +3472,8 @@ jQuery(function($) {
 <table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
 	<tr>
 		<td class="thead side">
-			<strong>Wiadomosci</strong>
 			<div class="float_right" style="padding-top: 5px;"><i class="fa fa-newspaper-o"></i></div>
+			<strong>Wiadomosci</strong>
 		</td>
 	</tr>
 	<tr>
@@ -3544,11 +3541,11 @@ jQuery(function($) {
 </table>
 <br />]]></template>
 		<template name="index_stats" version="1810"><![CDATA[<span class="smalltext fw4">
-	<span class="float_left">Total Threads:</span>	<span class="float_right">{$stats['numthreads']}</span> <br />
-	<span class="float_left">Total Posts:</span>  <span class="float_right">{$stats['numposts']}</span> <br />
-	<span class="float_left">Members:</span>  <span class="float_right">{$stats['numusers']}</span> <br />
-	<span class="float_left">Most Online:</span>  <span class="float_right">{$mostonline['numusers']}</span> <br />
-	<span class="float_left">Newest Member:</span>  <span class="float_right">{$newestmember}</span> 
+	<span class="float_left">Liczba wątków:</span>	<span class="float_right">{$stats['numthreads']}</span> <br />
+	<span class="float_left">Liczba postów:</span>  <span class="float_right">{$stats['numposts']}</span> <br />
+	<span class="float_left">Użytkownicy:</span>  <span class="float_right">{$stats['numusers']}</span> <br />
+	<span class="float_left">Najwięcej online:</span>  <span class="float_right">{$mostonline['numusers']}</span> <br />
+	<span class="float_left">Najnowszy użytkownik:</span>  <span class="float_right">{$newestmember}</span> 
 </span>]]></template>
 		<template name="index_whosonline" version="1814"><![CDATA[<span class="smalltext">{$lang->online_note}<br />{$onlinemembers}</span>]]></template>
 		<template name="loginbox" version="1806"><![CDATA[<tr>
