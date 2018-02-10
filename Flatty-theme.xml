@@ -350,7 +350,7 @@ table {
 }
 
 .thead {
-	background: #3D3C3C;
+	background: #FF0000;
 	color: #fff;
 	font-family: inherit;
 	font-size: 14px;
