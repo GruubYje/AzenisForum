@@ -3446,13 +3446,13 @@ jQuery(function($) {
 </script>
 </head>
 <body>
+{$header}
 <div id = "odkryj">
 	<span class="toggle-container">
 		<a class="rightbutton" title="Hide Sidebar"><i class="fa fa-compress"></i></a>
 		<a class="leftbutton" title="Show Sidebar"><i class="fa fa-expand"></i></a>
 	</span>
 </div>
-{$header}
 <div class="forums" style="float: left; width: 76%;">{$forums}</div>
 <div class="sidebar" style="float: right; width: 22%;">
 
