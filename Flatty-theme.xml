@@ -2729,6 +2729,7 @@ ul.thread_tools li.subscription_remove:before {
 
 .usercp_notepad { 
 	background: #3D3C3C;
+	color: #626262;
 	width: 99%; 
 }
 
