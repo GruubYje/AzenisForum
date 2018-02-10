@@ -14,7 +14,7 @@
 		<stylesheet name="global.css" version="1814">
 	<![CDATA[
 body {
-	background: #2B2B2B;
+	background: white;
 	color: #FF0000;
 	text-align: center;
 	line-height: 1.431;
@@ -524,7 +524,6 @@ tr.trow_selected td {
 	height: 48px;
 	line-height: 48px;
 	font-family: inherit;
-	background-image: url("http://www.mamkomputer.info/wp-content/uploads/2015/07/11.png");
 }
 
 .navigation a:link { text-decoration: none; color: #fff !important; }
@@ -3221,8 +3220,6 @@ jQuery(function($) {
 		<template name="global_unreadreports" version="1806"><![CDATA[<div class="red_alert"><a href="{$mybb->settings['bburl']}/modcp.php?action=reports">{$lang->unread_reports}</a></div>]]></template>
 		<template name="gobutton" version="1806"><![CDATA[<input type="submit" class="button" value="{$lang->go}" />]]></template>
 		<template name="header" version="1813"><![CDATA[<div id="container">
-	<a name="top" id="top"></a>
-	<div id="header">
 		<div id="sticky-container">
 		<div id="fake-panel"></div>
 		<div id="panel">
@@ -3404,11 +3401,9 @@ jQuery(function($) {
 	<span class="pmbg bradius-full">{$mybb->user['pms_unread']}</a></span>
 </span>
 			<ul class="menu top_links">
-				<li><a href="{$mybb->settings['bburl']}/portal.php">{$lang->toplinks_portal}</a></li>
-				<li><a href="{$mybb->settings['bburl']}/index.php">Forums</a></li>
+				<li><a href="{$mybb->settings['bburl']}/sklep.php">Sklep 24/7</a></li>
 				<li><a href="{$mybb->settings['bburl']}/search.php">{$lang->toplinks_search}</a></li>
 				<li><a href="{$mybb->settings['bburl']}/memberlist.php">{$lang->toplinks_memberlist}</a></li>
-				<li><a href="{$mybb->settings['bburl']}/calendar.php">{$lang->toplinks_calendar}</a></li>
 				<li><a href="{$mybb->settings['bburl']}/misc.php?action=help" class="help">{$lang->toplinks_help}</a></li>
 			</ul>
 	</div>
