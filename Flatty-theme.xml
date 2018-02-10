@@ -159,7 +159,7 @@ ol, ul, li {
 }
 
 #panel .lower {
-	background: #efefef;
+	background: #3D3C3C;
 	color: #999;
 	border-bottom: 1px solid #e3e3e3;
 	padding: 0.725em;
@@ -400,8 +400,9 @@ table {
 .tcat a:active { color: #9e906e; }
 
 .trow1 {
-	background: rgb(253, 253, 253);
-	border-bottom: 1px solid #f0f0f0;
+	opacity: 40%;
+	background: #3D3C3C;
+	border-bottom: 1px solid black;
 	padding: 1.025em 1.275em 0.875em 1.175em; 
 }
 
@@ -2988,26 +2989,12 @@ jQuery(function($) {
 					<br />
 				</div> <!-- end: ft-col-1 -->
 				<div class="ft-col-3">
-					<div class="ft-col-item">
-						<div class="ft-col-item-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-					</div>
 				</div> <!-- end: ft-col-3 -->
 				<div class="ft-col-2">
 					
 					</div> <!-- end: ft-col-2 -->
 					<div class="ft-col-2">
-					<div class="ft-head">Navigation</div>
-						<ul class="ft-menu">
-							<li><a href="{$mybb->settings['bburl']}">Forum</a></li>
-							<li><a href="{$mybb->settings['bburl']}/portal.php">{$lang->toplinks_portal}</a></li>
-							<li><a href="{$mybb->settings['bburl']}/search.php">{$lang->toplinks_search}</a></li>
-							<li><a href="{$mybb->settings['bburl']}/misc.php?action=help">{$lang->toplinks_help}</a></li>
-							<li><a href="{$mybb->settings['bburl']}/showteam.php">Show Team</a></li>
-						</ul>
-					</div>	<!-- end: ft-col-2 -->
-					<div class="ft-col-2">
-					<div class="ft-head">Social</div>
-						
+					
 					</div> <!-- end: ft-col-2 -->
 				</div> <!-- end: ft-row -->
 			</div> <!-- end: wrapper -->
