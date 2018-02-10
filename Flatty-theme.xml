@@ -2728,6 +2728,7 @@ ul.thread_tools li.subscription_remove:before {
 .usercp_nav_pmfolder { background-position: 0 -20px; }
 
 .usercp_notepad { 
+	background: #3D3C3C;
 	width: 99%; 
 }
 
