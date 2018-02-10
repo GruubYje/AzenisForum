@@ -28,8 +28,8 @@ body {
 }
 
 #odkryj {
-	margin-bottom: 50px;
-	margin-left: 75%;
+	margin-bottom: 45px;
+	margin-left: 95%;
 	high: 48px;
 	width: 70px;
 	flaot: right;
