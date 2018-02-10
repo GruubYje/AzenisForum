@@ -28,7 +28,7 @@ body {
 }
 
 #odkryj {
-	margin-bottom: 20px;
+	margin-bottom: 100px;
 	margin-left: 75%;
 	high: 48px;
 	width: 70px;
