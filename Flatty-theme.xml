@@ -499,15 +499,13 @@ tr.trow_selected td {
 	margin-bottom: 13px;
 	padding: 0 19px;
 	color: #fff;
-	float: right;
 	border-radius: 2px;
-	font-size: 13px;
+	font-size: 0px;
 	overflow: hidden;
 	height: 48px;
-	width: 50px;
 	line-height: 48px;
 	font-family: inherit;
-	background: #a19c69;
+	background-image: url("http://www.mamkomputer.info/wp-content/uploads/2015/07/11.png");
 }
 
 .navigation a:link { text-decoration: none; color: #fff !important; }
