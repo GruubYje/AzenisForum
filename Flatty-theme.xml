@@ -499,10 +499,11 @@ tr.trow_selected td {
 	margin-bottom: 13px;
 	padding: 0 19px;
 	color: #fff;
+	float: right;
 	border-radius: 2px;
-	font-size: 0px;
+	font-size: 13px;
 	overflow: hidden;
-	height: 50px;
+	height: 48px;
 	width: 50px;
 	line-height: 48px;
 	font-family: inherit;
