@@ -32,6 +32,10 @@ body {
 	border: 1px solid #FF0000;
 }
 
+#naglowek {
+	background-color: #3D3C3C;
+}
+
 a:link {
 	transition: all .12s ease !important;
 	color: #FF0000;
@@ -3476,7 +3480,7 @@ jQuery(function($) {
 <div class="sidebar" style="float: right; width: 22%;">
 <table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
 	<tr>
-		<td class="thead side">
+		<td class="thead side" id='naglowek'>
 			<div class="float_right" style="padding-top: 5px;"><i class="fa fa-newspaper-o"></i></div>
 			<strong>Wiadomosci</strong>
 		</td>
@@ -3491,7 +3495,7 @@ jQuery(function($) {
 </table><br />
 <table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
 	<tr>
-		<td class="thead side">
+		<td class="thead side"  id='naglowek'>
 			<strong><a href="online.php">{$lang->whos_online}</a></strong>
 			<div class="float_right" style="padding-top: 5px;"><i class="fa fa-child"></i></div>
 		</td>
@@ -3504,7 +3508,7 @@ jQuery(function($) {
 </table><br />
 <table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
 	<tr>
-		<td class="thead side">
+		<td class="thead side"  id='naglowek'>
 			<strong><a href="stats.php">{$lang->boardstats}</a></strong>
 			<div class="float_right" style="padding-top: 5px;"><i class="fa fa-line-chart"></i></div>
 		</td>
