@@ -126,7 +126,7 @@ ol, ul, li {
 }
 
 #logo {
-	height: 220px;
+	height: 100px;
 	width: 100%;
 	display: flex;
 	padding: 0 15px;
