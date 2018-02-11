@@ -439,9 +439,9 @@ table {
 .no_bottom_border { border-bottom: 0; }
 
 .post.unapproved_post { background: #3D3C3C; }
-.post.unapproved_post .post_author { border-bottom-color: #3D3C3C; }
-.post.classic.unapproved_post .post_author { border-color: #3D3C3C; }
-.post.unapproved_post .post_controls { border-top-color: #3D3C3C; }
+.post.unapproved_post .post_author { border: 1px solid #3D3C3C; }
+.post.classic.unapproved_post .post_author { border: 1px solid #3D3C3C; }
+.post.unapproved_post .post_controls { border: 1px solid #3D3C3C; }
 
 .trow_deleted,
 .post.deleted_post { 
@@ -476,7 +476,7 @@ tr.trow_selected td {
 	background: #f9f9f9;
 	margin-bottom: 7px;
     padding: 15px;
-	border: 1px solid #ccdfee;
+	border: border: 1px solid #3D3C3C;;
 }
 
 .deleted_post_collapsed .show_deleted_post { margin: -16px 6px 0 0; }
@@ -4659,8 +4659,8 @@ if(use_xmlhttprequest == "1")
 </table>
 <br />]]></template>
 		<template name="postbit" version="1813"><![CDATA[{$ignore_bit}{$deleted_bit}
-<a name="pid{$post['pid']}" id="pid{$post['pid']}"></a>
-<div class="post {$unapproved_shade}" style="{$post_visibility}" id="post_{$post['pid']}">
+<a name="pid{$post['pid']}" id="pid{$post['pid']}" style="border: 1px solid #3D3C3C;"></a>
+<div class="post {$unapproved_shade}" style="border: 1px solid #3D3C3C;{$post_visibility}" id="post_{$post['pid']}">
 <div class="post_author" style="background: #3D3C3C;">
 	{$post['useravatar']}
 	<div class="author_information">
