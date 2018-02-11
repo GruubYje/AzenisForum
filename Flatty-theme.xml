@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+#<?xml version="1.0" encoding="UTF-8"?>
 <theme name="Flatty" version="1814">
 	<properties>
 		<templateset><![CDATA[2]]></templateset>
@@ -3273,6 +3273,9 @@ jQuery(function($) {
 		<template name="header" version="1813"><![CDATA[<div id="container">
 	<a name="top" id="top"></a>
 	<div id="header">
+		<div id="logo">
+			<a href="http://vps509488.ovh.net/"><img src="https://i.imgur.com/iR5w610.png"></a></img>
+		</div>
 		<div id="sticky-container">
 		<div id="fake-panel"></div>
 		<div id="panel">
