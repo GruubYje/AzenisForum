@@ -1077,7 +1077,11 @@ div.error ul { margin-left: 24px; }
 	margin-bottom: 10px; 
 }
 
-#posts_container { padding: 0; }
+#posts_container { 
+	padding: 0; 
+	background: #3D3C3C;
+}
+
 
 .ignored_post {
 	border-top: 3px solid #333;
