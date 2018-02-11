@@ -369,7 +369,7 @@ table {
 }
 
 .thead {
-	background: #FF0000;
+	background-image: url("https://imgur.com/a/ObTv0");
 	color: #fff;
 	font-family: inherit;
 	font-size: 14px;
@@ -439,9 +439,9 @@ table {
 .no_bottom_border { border-bottom: 0; }
 
 .post.unapproved_post { background: #ffdde0; }
-.post.unapproved_post .post_author { border-bottom-color: #ffb8be; }
-.post.classic.unapproved_post .post_author { border-color: #ffb8be; }
-.post.unapproved_post .post_controls { border-top-color: #ffb8be; }
+.post.unapproved_post .post_author { border-bottom-color: #3D3C3C; }
+.post.classic.unapproved_post .post_author { border-color: #3D3C3C; }
+.post.unapproved_post .post_controls { border-top-color: #3D3C3C; }
 
 .trow_deleted,
 .post.deleted_post { 
@@ -645,6 +645,8 @@ label.error {
 }
 
 form #message { 
+	background: #3D3C3C;
+	color: #8c8c8c;
 	width: 500px; 
 	box-sizing: border-box; 
 }
@@ -2729,7 +2731,7 @@ ul.thread_tools li.subscription_remove:before {
 
 .usercp_notepad { 
 	background: #3D3C3C;
-	color: #626262;
+	color: #8c8c8c;
 	width: 99%; 
 }
 
