@@ -10,6 +10,16 @@
 		<color><![CDATA[]]></color>
 		<disporder><![CDATA[a:7:{s:10:"global.css";i:1;s:8:"css3.css";i:2;s:16:"star_ratings.css";i:3;s:17:"thread_status.css";i:4;s:14:"showthread.css";i:5;s:10:"usercp.css";i:6;s:9:"modcp.css";i:7;}]]></disporder>
 	</properties>
+	<script>
+	function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+	}
+	</script>
 	<stylesheets>
 		<stylesheet name="global.css" version="1814">
 	<![CDATA[
@@ -86,6 +96,58 @@ body {
 #naglowek {
 	border: 1px solid #FF0000;
 	background-color: #3D3C3C;
+}
+#ddnmenu {
+  float: left;
+  height: 80px;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0);
+}
+.topnav {
+  float: left;
+  height: 80px;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0);
+}
+
+.topnav a {
+  float: right;
+  display: inline;
+  color: #FF0000;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: inline;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    right: 0;
+    top: 0;
+}
+.topnav.responsive a {
+	float: none;
+	display: inline;
+	text-align: left;
+}
 }
 
 a:link {
@@ -204,12 +266,13 @@ ol, ul, li {
 }
 
 #panel .upper {
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0,0,0,0.1);
 	color: #fff;
 	clear: both;
-	height: 64px;
+	width: 100%;
+	height: 80px;
 	position: fixed;
-	line-height: 64px;
+	line-height: 80px;
 	padding: 0px 15px;
 }
 
@@ -707,7 +770,6 @@ form #message {
 }
 
 .popup_menu:before {
-	position: absolute; 
 	width: 0; height: 0;
 	content: "";
 	display: block;
@@ -1055,7 +1117,6 @@ div.error ul { margin-left: 24px; }
 	display: block;
 	left: 0.5em;
 	bottom: 100%;
-	position: absolute; 
 }
 
 .pagination_breadcrumb_link {
@@ -1393,7 +1454,7 @@ a.button span {
 /** jGrowl Start **/
 /** Special IE6 Style Positioning **/
 
-.ie6 { position: absolute; }
+.ie6 {  }
 
 .ie6.top-right {
 	right: auto;
@@ -1590,7 +1651,6 @@ a.button span {
 }
 
 .modal a.close-modal {
-	position: absolute;
     top: 1.3rem;
     right: 1.3rem;
     display: block;
@@ -1627,7 +1687,6 @@ a.button span {
 * Copyright (c) 2016 Trent Richardson; Licensed MIT */
 
 .jqifade{
-	position: absolute;
 	background-color: #777;
 }
 
@@ -1640,7 +1699,6 @@ div.jqi {
 	width: 400px;
 	max-width: 90%;
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-	position: absolute;
 	background-color: #fff;
 	font-size: 11px;
 	text-align: left;
@@ -1724,13 +1782,11 @@ div.jqi .jqiparentstate::after{
 	opacity: 0.6;
 	filter: alpha(opacity=60);
 	content: '';
-	position: absolute;
 	top:0;left:0;bottom:0;right:0;
 	border-radius: 6px;
 }
 
 div.jqi .jqisubstate{
-	position: absolute;
 	top:0;
 	left: 20%;
 	width: 60%;
@@ -1851,7 +1907,6 @@ div.jqi .jqisubstate .jqibuttons button{
 }
 
 .ttip span { 
-	position: absolute;
 	display: none;
 	margin-left: -999em; 
 }
@@ -2619,7 +2674,6 @@ td .star_rating {
 
 .star_rating li a,
 .star_rating .current_rating {
-	position: absolute;
 	text-indent: -1000px;
 	height: 16px;
 	line-height: 16px;
@@ -3433,12 +3487,12 @@ jQuery(function($) {
 	<script type="text/javascript">
 		$("#quick_login input[name='url']").val($(location).attr('href'));
 	</script>
-	<ul class="menu top_links" id="znikacz">
-		<li><a href="{$mybb->settings['bburl']}/sklep.php">Sklep 24/7</a></li>
-		<li><a href="{$mybb->settings['bburl']}/search.php">{$lang->toplinks_search}</a></li>
-		<li><a href="{$mybb->settings['bburl']}/memberlist.php">{$lang->toplinks_memberlist}</a></li>
-		<li><a href="{$mybb->settings['bburl']}/misc.php?action=help" class="help">{$lang->toplinks_help}</a></li>
-	</ul>
+	<div class="topnav" id="myTopnav">
+		<a href="{$mybb->settings['bburl']}/sklep.php">Sklep 24/7</a>
+		<a href="{$mybb->settings['bburl']}/memberlist.php">{$lang->toplinks_memberlist}</a>
+		<a href="{$mybb->settings['bburl']}/misc.php?action=help" class="help">{$lang->toplinks_help}</a>
+		<a href="{$mybb->settings['bburl']}/search.php">{$lang->toplinks_search}</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">☰</a>
 	</div>
 </div>
 <div class="lower">
@@ -3447,8 +3501,9 @@ jQuery(function($) {
 	<br class="clear" />
 </div>]]></template>
 		<template name="header_welcomeblock_member" version="1813"><![CDATA[<!-- Continuation of div(class="upper") as opened in the header template -->
-<span class="float_right">
-	<a href="" id="ddnmenu">Witaj ponownie, {$mybb->user['username']} <i class="fa fa-caret-down"></i></a>
+<span class="float_right" style="padding: 5px; font-size: 14px;">
+	
+	<a href="" id="ddnmenu">{$mybb->user['username']} <i class="fa fa-caret-down"></i></a>
 			<div id="ddnmenu_popup" class="popup_menu pedit--adj" style="display: none;">
 				<div class="popup_item_container">
 					<a href="{$mybb->settings['bburl']}/usercp.php" class="popup_item">Panel użytkownika<i class="fa fa-user menuadj"></i></a>
@@ -3480,13 +3535,13 @@ jQuery(function($) {
 	<a href="{$mybb->settings['bburl']}/private.php" style="margin-left: 14px;">{$lang->welcome_pms}</a> <a href="{$mybb->settings['bburl']}/private.php">
 	<span class="pmbg bradius-full">{$mybb->user['pms_unread']}</a></span>
 </span>
-			<ul class="menu top_links" id="znikacz">
-				<li><a href="{$mybb->settings['bburl']}/search.php">{$lang->toplinks_search}</a></li>
-				<li><a href="{$mybb->settings['bburl']}/sklep.php">Sklep 24/7</a></li>
-				<li><a href="{$mybb->settings['bburl']}/memberlist.php">{$lang->toplinks_memberlist}</a></li>
-				<li><a href="{$mybb->settings['bburl']}/misc.php?action=help" class="help">{$lang->toplinks_help}</a></li>
-			</ul>
-	</div>
+				<div class="topnav" id="myTopnav">
+					<a href="{$mybb->settings['bburl']}/sklep.php">Sklep 24/7</a>
+					<a href="{$mybb->settings['bburl']}/memberlist.php">{$lang->toplinks_memberlist}</a>
+					<a href="{$mybb->settings['bburl']}/misc.php?action=help" class="help">{$lang->toplinks_help}</a>
+					<a href="{$mybb->settings['bburl']}/search.php">{$lang->toplinks_search}</a>
+					<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">☰</a>
+				</div>
 </div>
 <div class="lower">
 	<br class="clear" />
