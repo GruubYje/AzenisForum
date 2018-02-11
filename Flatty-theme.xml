@@ -4020,7 +4020,7 @@ if(use_xmlhttprequest == "1")
 		</div>
 		<div class="sidebar-container">
 			<div class="sidebar-inner">
-				<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor...</span>
+				<span></span>
 			</div>
 		</div>
 		<br />
