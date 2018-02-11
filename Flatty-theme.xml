@@ -24,7 +24,7 @@
 		<stylesheet name="global.css" version="1814">
 	<![CDATA[
 body {
-	background: url("https://cs-placzabaw.pl/pliki/www-tlo1.jpg") #000 no-repeat;
+	background: url("https://i.imgur.com/eNuuEtH.jpg") #000 no-repeat;
 	background-repeat: no-repeat;
 	color: #FF0000;
 	text-align: center;
@@ -38,6 +38,7 @@ body {
 	vertical-align: baseline;
 }
 #znikacz {
+	margin-left: 75%;
 	opacity: 1;
 	position: absolute;
 }
@@ -177,7 +178,7 @@ ol, ul, li {
 }
 
 #container {
-	background: url("https://cs-placzabaw.pl/pliki/www-tlo1.jpg") #000 no-repeat;
+	background: url("https://i.imgur.com/eNuuEtH.jpg") #000 no-repeat;
 	background-repeat: no-repeat;
 	font-family: "Open Sans", Arial, Tahoma, sans-serif;
 	text-align: left;
@@ -466,7 +467,7 @@ table {
 }
 
 .thead {
-	background-image: url("https://i.imgur.com/K1r5Ulf.png");
+	background-image: url("https://i.imgur.com/K1r5Ulf.png ");
 	color: #fff;
 	font-family: inherit;
 	font-size: 14px;
@@ -557,7 +558,7 @@ tr.trow_selected td {
 .trow_selected a:active { color: #333; }
 
 .trow_sep {
-	background: #ddd;
+	background: #DBE6EC;
 	color: #333;
 	padding: 7px;
 	font-size: 12px;
@@ -582,7 +583,7 @@ tr.trow_selected td {
 .tfoot {
 	padding: 10px;
 	color: #777;
-	background: #DBE6EC;; 
+	background: #DBE6EC; 
 }
 
 .tfoot a:link {
@@ -2649,7 +2650,7 @@ a.button {
 		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1814"><![CDATA[.star_rating,
 .star_rating li a:hover,
 .star_rating .current_rating {
-	background: url(images/star_rating.png) left -1000px repeat-x;
+	background: left -1000px repeat-x;
 	vertical-align: middle;
 }
 
@@ -3441,7 +3442,7 @@ jQuery(function($) {
 						</fieldset>
 						</form>]]></template>
 		<template name="header_welcomeblock_guest" version="1813"><![CDATA[<span class="float_left">
-		<ul class="menu top_links" id="znikacz">
+		<ul class="menu top_links" id="znikacz" style="margin-left: 75%;" >
 			<li><a href="{$mybb->settings['bburl']}/member.php?action=login" onclick="$('#quick_login') class="login bradius">{$lang->welcome_login}</a> 
 			<li><a href="{$mybb->settings['bburl']}/member.php?action=register" >{$lang->welcome_register}</a>
 		</ul>
@@ -3492,7 +3493,7 @@ jQuery(function($) {
 		<a href="{$mybb->settings['bburl']}/memberlist.php">{$lang->toplinks_memberlist}</a>
 		<a href="{$mybb->settings['bburl']}/misc.php?action=help" class="help">{$lang->toplinks_help}</a>
 		<a href="{$mybb->settings['bburl']}/search.php">{$lang->toplinks_search}</a>
-		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">☰</a>
+		<a href="/" style="font-size:15px;" class="icon" onclick="myFunction()">☰</a>
 	</div>
 </div>
 <div class="lower">
@@ -3540,7 +3541,7 @@ jQuery(function($) {
 					<a href="{$mybb->settings['bburl']}/memberlist.php">{$lang->toplinks_memberlist}</a>
 					<a href="{$mybb->settings['bburl']}/misc.php?action=help" class="help">{$lang->toplinks_help}</a>
 					<a href="{$mybb->settings['bburl']}/search.php">{$lang->toplinks_search}</a>
-					<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">☰</a>
+					<a href="/" style="font-size:15px;" class="icon" onclick="myFunction()">☰</a>
 				</div>
 </div>
 <div class="lower">
