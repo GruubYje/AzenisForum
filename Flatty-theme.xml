@@ -126,7 +126,6 @@ ol, ul, li {
 }
 
 #logo {
-	background: #eceef0 url(images/flatty/mlogo.png) no-repeat 0% 10% / cover;
 	height: 220px;
 	width: 100%;
 	display: flex;
