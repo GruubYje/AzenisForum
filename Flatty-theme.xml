@@ -14,7 +14,8 @@
 		<stylesheet name="global.css" version="1814">
 	<![CDATA[
 body {
-	background: #2B2B2B;
+	background: url("https://cdn.wallpapersafari.com/61/5/pQdLa5.jpg") #000 no-repeat;
+	background-repeat: no-repeat;
 	color: #FF0000;
 	text-align: center;
 	line-height: 1.431;
@@ -25,6 +26,9 @@ body {
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	vertical-align: baseline;
+}
+#znikacz {
+	opacity: 1;
 }
 
 #odkryj {
@@ -76,7 +80,6 @@ body {
 #pasek {
 	color: #FF0000;
 	border: 1px solid #FF0000;
-	background-color: #3D3C3C;
 }
 
 #naglowek {
@@ -111,6 +114,8 @@ ol, ul, li {
 }
 
 #container {
+	background: url("https://cdn.wallpapersafari.com/61/5/pQdLa5.jpg") #000 no-repeat;
+	background-repeat: no-repeat;
 	font-family: "Open Sans", Arial, Tahoma, sans-serif;
 	text-align: left;
 	color: #FF0000;
@@ -143,7 +148,6 @@ ol, ul, li {
 	width: auto !important;
 	padding: 40px 10px;
 	overflow: hidden;
-	background: #2B2B2B; 
 }
 
 #header ul.menu {
@@ -178,13 +182,11 @@ ol, ul, li {
 #panel .upper a.login,
 #panel .upper a.lost_password {
 	padding: 7px 21px 7px 20px;
-    background: #2B2B2B; 
 }
 
 #panel .upper a.register {
 	padding: 7px 21px 7px 20px;
 	margin-left: 7px;
-	background: #2B2B2B;
 }
 
 #panel .upper a.login:hover { background: #6e88ea; color: #fff; }
@@ -200,7 +202,7 @@ ol, ul, li {
 }
 
 #panel .upper {
-	background: #2B2B2B; 
+	background-color: rgba(0, 0, 0, 0);
 	color: #fff;
 	clear: both;
 	height: 64px;
@@ -217,9 +219,8 @@ ol, ul, li {
 }
 
 #panel .lower {
-	background: #2B2B2B; 
+	background-color: rgba(0, 0, 0, 0);
 	color: #FF0000;
-	border-bottom: 1px solid black;
 	padding: 0.725em;
     padding-top: 0.875em; 
 }
@@ -329,13 +330,6 @@ ol, ul, li {
 	float: right;
 	color: #FF0000;
 	margin-top: -17px; 
-}
-
-#debug {
-	float: right;
-	text-align: right;
-	margin-top: 20px;
-	font-size: 11px; 
 }
 
 .scaleimages img { 
@@ -482,12 +476,12 @@ table {
 
 .trow_deleted,
 .post.deleted_post { 
-	background: #3D3C3C; 
+	background: gray; 
 }
 
 .trow_selected,
 tr.trow_selected td {
-	background: #f9fbe7 !important;
+	background: #3D3C3C !important;
 	color: #111;
 }
 
@@ -505,15 +499,15 @@ tr.trow_selected td {
 }
 
 .deleted_post_hidden {
-    border-top: 2px solid #ddd;
+    border-top: 2px solid gray;
     padding: 15px;
 }
 
 .deleted_post_collapsed {
-	background: #f9f9f9;
+	background: gray;
 	margin-bottom: 7px;
     padding: 15px;
-	border: border: 1px solid #3D3C3C;;
+	border: border: 1px solid gray;
 }
 
 .deleted_post_collapsed .show_deleted_post { margin: -16px 6px 0 0; }
@@ -1219,7 +1213,6 @@ div.error ul { margin-left: 24px; }
 }
 
 .post .post_head {
-	border-bottom: 1px solid #eee;
 	font-size: 11px;
 	padding-bottom: 12px;
 	margin-bottom: 7px; 
@@ -1258,7 +1251,7 @@ div.error ul { margin-left: 24px; }
 
 .post_content .signature {
 	margin-top: 5px;
-	border-top: 1px dotted #ddd;
+	border-top: 1px solid black;
 	padding: 10px 0 4px 0; 
 }
 
@@ -3004,7 +2997,6 @@ jQuery(function($) {
   });
 });
 </script>
-<debugstuff>
 	</div>
 </div>
 <a class="backtop"><span id='backtop'><i class="fa fa-angle-up arr-adj"></i></span></a>
@@ -3272,9 +3264,6 @@ jQuery(function($) {
 		<template name="header" version="1813"><![CDATA[<div id="container">
 	<a name="top" id="top"></a>
 	<div id="header">
-		<div id="logo">
-			<a href="http://vps509488.ovh.net/"><img src="https://i.imgur.com/iR5w610.png"></a></img>
-		</div>
 		<div id="sticky-container">
 		<div id="fake-panel"></div>
 		<div id="panel">
@@ -3356,9 +3345,11 @@ jQuery(function($) {
 						</fieldset>
 						</form>]]></template>
 		<template name="header_welcomeblock_guest" version="1813"><![CDATA[<span class="float_left">
-	<a href="{$mybb->settings['bburl']}/member.php?action=login" onclick="$('#quick_login').modal({ fadeDuration: 250, keepelement: true, zIndex: (typeof modal_zindex !== 'undefined' ? modal_zindex : 9999) }); return false;" class="login bradius">{$lang->welcome_login}</a> 
-	<a href="{$mybb->settings['bburl']}/member.php?action=register" class="register bradius">{$lang->welcome_register}</a>
-</span>
+		<ul class="menu top_links" id="znikacz">
+			<li><a href="{$mybb->settings['bburl']}/member.php?action=login" onclick="$('#quick_login') class="login bradius">{$lang->welcome_login}</a> 
+			<li><a href="{$mybb->settings['bburl']}/member.php?action=register" >{$lang->welcome_register}</a>
+		</ul>
+	</span>
 	<div class="modal login-modal" id="quick_login" style="display: none;">
 		<form method="post" action="{$mybb->settings['bburl']}/member.php">
 			<input name="action" type="hidden" value="do_login" />
@@ -3400,7 +3391,7 @@ jQuery(function($) {
 	<script type="text/javascript">
 		$("#quick_login input[name='url']").val($(location).attr('href'));
 	</script>
-	<ul class="menu top_links">
+	<ul class="menu top_links" id="znikacz">
 		<li><a href="{$mybb->settings['bburl']}/sklep.php">Sklep 24/7</a></li>
 		<li><a href="{$mybb->settings['bburl']}/search.php">{$lang->toplinks_search}</a></li>
 		<li><a href="{$mybb->settings['bburl']}/memberlist.php">{$lang->toplinks_memberlist}</a></li>
@@ -3411,12 +3402,6 @@ jQuery(function($) {
 <div class="lower">
 	<a class="buttons float_right"></a>
 	<a class="clickedbuttons float_right"></a>
-	<div class="wrapper">
-		<ul class="menu user_links">
-			<li><a href="{$mybb->settings['bburl']}/search.php?action=getnew">{$lang->welcome_newposts}</a></li>
-			<li><a href="{$mybb->settings['bburl']}/search.php?action=getdaily">{$lang->welcome_todaysposts}</a></li>
-		</ul>		
-	</div>
 	<br class="clear" />
 </div>]]></template>
 		<template name="header_welcomeblock_member" version="1813"><![CDATA[<!-- Continuation of div(class="upper") as opened in the header template -->
@@ -3453,7 +3438,7 @@ jQuery(function($) {
 	<a href="{$mybb->settings['bburl']}/private.php" style="margin-left: 14px;">{$lang->welcome_pms}</a> <a href="{$mybb->settings['bburl']}/private.php">
 	<span class="pmbg bradius-full">{$mybb->user['pms_unread']}</a></span>
 </span>
-			<ul class="menu top_links">
+			<ul class="menu top_links" id="znikacz">
 				<li><a href="{$mybb->settings['bburl']}/search.php">{$lang->toplinks_search}</a></li>
 				<li><a href="{$mybb->settings['bburl']}/sklep.php">Sklep 24/7</a></li>
 				<li><a href="{$mybb->settings['bburl']}/memberlist.php">{$lang->toplinks_memberlist}</a></li>
@@ -3462,19 +3447,6 @@ jQuery(function($) {
 	</div>
 </div>
 <div class="lower">
-	<div class="wrapper">
-		<ul class="menu user_links">
-			<li><a href="javascript:void(0)" onclick="MyBB.popupWindow('{$mybb->settings['bburl']}/misc.php?action=buddypopup&modal=1', null, true); return false;">{$lang->welcome_open_buddy_list}</a></li>
-			<li><a href="{$mybb->settings['bburl']}/search.php?action=getnew">{$lang->welcome_newposts}</a></li>
-			<li><a href="{$mybb->settings['bburl']}/search.php?action=getdaily">{$lang->welcome_todaysposts}</a></li>
-		</ul>
-			<ul class="menu panel_links">
-				{$usercplink}
-				{$modcplink}
-				{$admincplink}
-			</ul>
-		</ul>
-		</div>
 	<br class="clear" />
 </div>]]></template>
 		<template name="header_welcomeblock_member_admin" version="1806"><![CDATA[<li><a href="{$mybb->settings['bburl']}/{$admin_dir}/index.php" class="admincp"><i class="fa fa-cog" style="color: #e76b6b;"></i> {$lang->welcome_admin}</a></li>]]></template>
@@ -4700,7 +4672,7 @@ if(use_xmlhttprequest == "1")
 <br />]]></template>
 		<template name="postbit" version="1813"><![CDATA[{$ignore_bit}{$deleted_bit}
 <a name="pid{$post['pid']}" id="pid{$post['pid']}" style="border: 1px solid #3D3C3C;"></a>
-<div class="post {$unapproved_shade}" style="border: 1px solid #3D3C3C;{$post_visibility}" id="post_{$post['pid']}">
+<div class="post {$unapproved_shade}" style="border: 4px solid #3D3C3C; padding-bottom: 1px;{$post_visibility}" id="post_{$post['pid']}">
 <div class="post_author" style="background: #3D3C3C;">
 	{$post['useravatar']}
 	<div class="author_information">
@@ -5556,7 +5528,7 @@ if(use_xmlhttprequest == "1")
 			</tr>
 			{$captcha}
 			<tr>
-				<td colspan="2" align="center" class="tfoot"><input type="submit" class="button" value="{$lang->post_reply}" tabindex="2" accesskey="s" id="quick_reply_submit" /> <input type="submit" class="button" name="previewpost" value="{$lang->preview_post}" tabindex="3" /></td>
+				<td colspan="2" align="center" class="tfoot" style="background: #3D3C3C;"><input type="submit" class="button" value="{$lang->post_reply}" tabindex="2" accesskey="s" id="quick_reply_submit" /> <input type="submit" class="button" name="previewpost" value="{$lang->preview_post}" tabindex="3" /></td>
 			</tr>
 		</tbody>
 	</table>
