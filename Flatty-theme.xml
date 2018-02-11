@@ -438,14 +438,14 @@ table {
 
 .no_bottom_border { border-bottom: 0; }
 
-.post.unapproved_post { background: #ffdde0; }
+.post.unapproved_post { background: #3D3C3C; }
 .post.unapproved_post .post_author { border-bottom-color: #3D3C3C; }
 .post.classic.unapproved_post .post_author { border-color: #3D3C3C; }
 .post.unapproved_post .post_controls { border-top-color: #3D3C3C; }
 
 .trow_deleted,
 .post.deleted_post { 
-	background: #e8eaf6; 
+	background: #3D3C3C; 
 }
 
 .trow_selected,
@@ -1111,7 +1111,7 @@ div.error ul { margin-left: 24px; }
 	float: left;
 	width: 15%;
 	padding: 5px 1%;
-	border-right: 1px solid #eee; 
+	border-right: 1px solid #3D3C3C; 
 }
 
 .post .post_author .buddy_status {
@@ -1138,7 +1138,7 @@ div.error ul { margin-left: 24px; }
 	border-radius: 1000px;
 	width: auto;
 	height: auto;
-	background: #fff;
+	background: #3D3C3C;
 }
 
 .post .post_author div.author_information {
@@ -4653,7 +4653,7 @@ if(use_xmlhttprequest == "1")
 		<template name="postbit" version="1813"><![CDATA[{$ignore_bit}{$deleted_bit}
 <a name="pid{$post['pid']}" id="pid{$post['pid']}"></a>
 <div class="post {$unapproved_shade}" style="{$post_visibility}" id="post_{$post['pid']}">
-<div class="post_author" style="background: #f6f5f7;">
+<div class="post_author" style="background: #3D3C3C;">
 	{$post['useravatar']}
 	<div class="author_information">
 			<strong><span class="largetext">{$post['profilelink']}</span></strong><br />
