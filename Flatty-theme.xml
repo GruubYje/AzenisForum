@@ -4046,10 +4046,13 @@ if(use_xmlhttprequest == "1")
 				{$report_options}
 			</div>
 		</div>
+<<<<<<< HEAD
 		<div class="sidebar-container">
 			<div class="sidebar-inner">
 				<span></span>
 			</div>
+=======
+>>>>>>> dc34a104f5e2182d8f4ab0cd9f2d6bf8c68bc07a
 		</div>
 		<br />
 	</div>
