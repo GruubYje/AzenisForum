@@ -1214,7 +1214,10 @@ div.error ul { margin-left: 24px; }
 	padding: 5px 1.4% 5px;
 }
 
-.post_content { padding: 18px 20px 10px 20px; }
+.post_content { 
+	padding: 18px 20px 10px 20px; 
+	background: #3D3C3C;
+}
 
 .post_content .signature {
 	margin-top: 5px;
@@ -1236,6 +1239,7 @@ div.error ul { margin-left: 24px; }
 
 .post_controls_default {
 	padding: 0.9em;
+	background: #3D3C3C;
 	clear: both;
 	overflow: hidden;
 }
@@ -4740,7 +4744,7 @@ if(use_xmlhttprequest == "1")
 	{$post['replink']}{$post['profilefield']}
 </div>]]></template>
 		<template name="postbit_classic" version="1813"><![CDATA[{$ignore_bit}{$deleted_bit}
-<a name="pid{$post['pid']}" id="pid{$post['pid']}"></a>
+<a name="pid{$post['pid']}" id="pid{$post['pid']}" style="background:#3D3C3C;"></a>
 <div class="post classic {$unapproved_shade}" style="{$post_visibility}" id="post_{$post['pid']}">
 <div class="post_author scaleimages">
 		<div class="author_information">
