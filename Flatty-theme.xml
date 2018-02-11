@@ -24,7 +24,7 @@
 		<stylesheet name="global.css" version="1814">
 	<![CDATA[
 body {
-	background: url("https://i.imgur.com/eNuuEtH.jpg") #000 no-repeat;
+	background: url("http://wallpul.info/i/2016/12/wallpapers-4k-game-wallpaper-middle-earth-shadow-of-mordor-wallpapers-hd-wallpapers-background-wallpaper.jpg) #000 no-repeat;
 	background-repeat: no-repeat;
 	color: #FF0000;
 	text-align: center;
@@ -198,7 +198,7 @@ ol, ul, li {
 }
 
 #container {
-	background: url("https://i.imgur.com/eNuuEtH.jpg") #000 no-repeat;
+	background: url("http://wallpul.info/i/2016/12/wallpapers-4k-game-wallpaper-middle-earth-shadow-of-mordor-wallpapers-hd-wallpapers-background-wallpaper.jpg") #000 no-repeat;
 	background-repeat: no-repeat;
 	font-family: "Open Sans", Arial, Tahoma, sans-serif;
 	text-align: left;
