@@ -613,7 +613,7 @@ tr.trow_selected td {
 .tfoot {
 	padding: 10px;
 	color: #777;
-	background: #DBE6EC; 
+	background: #333333; 
 }
 
 .tfoot a:link {
@@ -4010,7 +4010,7 @@ if(use_xmlhttprequest == "1")
 <div class="profcontainer">
 	<div class="left-sidebar">
 		<div class="sidebar-container" style="border: 1px solid #262626;">
-			<div class="thead profile-side" style="height:100px; background: #262626; border: 1px solid #262626;>{$lang->users_forum_info}</div>
+			<div class="thead profile-side" style="height:230px; background: #262626; border: 1px solid #262626;>{$lang->users_forum_info}</div>
 			<div class="sidebar-inner">
 				<span class="float_left clr_drk">{$lang->joined}</span>
 				<span class="float_right"><strong>{$memregdate}</strong></span><br />
