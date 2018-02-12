@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme name="Flatty" version="1814">
 	<properties>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<templateset><![CDATA[2]]></templateset>
 		<editortheme><![CDATA[mybb.css]]></editortheme>
 		<imgdir><![CDATA[images/flatty]]></imgdir>
@@ -358,7 +359,7 @@ ol, ul, li {
 }
 
 #footer .upper {
-	background: #2B2B2B; 
+	background: #000000; 
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	padding: 6px;
@@ -393,7 +394,7 @@ ol, ul, li {
 
 #footer .uppermid {
 	overflow: hidden;
-	background: #2B2B2B; 
+	background: #000000; 
     padding: 2rem;
     color: #FF0000;
     font-size: 13px;
@@ -486,7 +487,7 @@ table {
 }
 
 .tborder {
-	background: #fff;
+	background: #ffffff;
 	width: 100%;
 	margin: auto auto; 
 }
@@ -497,8 +498,8 @@ table {
 }
 
 .thead {
-	background-image: url("https://i.imgur.com/K1r5Ulf.png ");
-	color: #fff;
+	background: #FF0000;
+	color: #ffffff;
 	font-family: inherit;
 	font-size: 14px;
 	font-weight: 400;
@@ -507,28 +508,28 @@ table {
 }
 
 .thead.side {
-	background: #2B2B2B;
+	background: #000000;
 	padding: 1rem 1.2rem .9rem 1.2rem;
 }
 
 .thead a:link {
-	color: #fff;
+	color: #ffffff;
 	text-decoration: none; 
 }
 
 .thead a:visited {
-	color: #fff;
+	color: #ffffff;
 	text-decoration: none;
 }
 
 .thead a:hover,
 .thead a:active {
-	color: #fff;
+	color: #ffffff;
 	text-decoration: underline; 
 }
 
 .thead.signin {
-	background: #fff;
+	background: #000000;
 	font-size: 24px;
 	color: #555 !important;
 	text-align: center;
@@ -536,7 +537,7 @@ table {
 }
 
 .tcat {
-	background: #3D3C3C;
+	background: #333333;
 	font-size: 12px;
 	box-sizing: border-box;
 	padding: 11px 20px 9px 18px;
@@ -549,18 +550,18 @@ table {
 .tcat a:active { color: #9e906e; }
 
 .trow1 {
-	background: #2B2B2B;
+	background: #212121;
 	padding: 1.025em 1.275em 0.875em 1.175em; 
 }
 
 .trow2 {
-	background: #262626;
+	background: #333333;
 	border: 1px solid #;
 	padding: 1.025em 1.275em 0.875em 1.175em; 
 }
 
 .trow_shaded {
-	background: #2B2B2B;
+	background: #000000;
 	border: 0; 
 }
 
@@ -1946,7 +1947,7 @@ div.jqi .jqisubstate .jqibuttons button{
 	position: absolute;
 	opacity: 1;
 	font-size: 12px;
-	color: #fff;
+	color: #ff4444;
 	margin-left: 0;
 	min-width: 230px;
 	top: 2.5em; left: 3px;
@@ -2066,7 +2067,7 @@ span.toggle-container {
 	padding: .8rem 1.1rem .7rem 1.1rem;
 	color: #555;
 	border-bottom: 1px solid #e5e5e5;
-	background: #fcfdfe;
+	background: #ff0000;
 }
 
 .fw-fn {
@@ -2469,8 +2470,8 @@ a.button {
 	background: #b0bec5;
 }
 /* DVZ Shoutbox */
-#shoutbox { margin-bottom: 10px; border: solid 2px rgba(0,0,0,0.1); background: #2B2B2B;}
-#shoutbox .head { padding: 8px; background-image: url("https://i.imgur.com/K1r5Ulf.png");}
+#shoutbox { margin-bottom: 10px; border: solid 2px rgba(0,0,0,0.1); background: #000000;}
+#shoutbox .head { padding: 8px; background: #ff0000;}
 #shoutbox.front .head { cursor: pointer; }
 #shoutbox .head .right { float: right; margin: 0; font-size: 13px; }
 #shoutbox.collapsed .head { opacity: 0.6; }
@@ -3207,7 +3208,6 @@ jQuery(function($) {
 <td class="{$bgcolor}" align="center" width="1"><div class="forum_status forum_{$lightbulb['folder']} ajax_mark_read" title="{$lightbulb['altonoff']}" id="mark_read_{$forum['fid']}"><i class="fa fa-comments"></i></div></td>
 <td class="{$bgcolor}">
 <a href="{$forum_url}" class="ttip">{$forum['name']}<br />
-<span class="ttbg">{$lang->forumbit_threads}: {$threads}{$unapproved['unapproved_threads']} &nbsp;//&nbsp; {$lang->forumbit_posts}: {$posts}{$unapproved['unapproved_posts']}</span>
 </a>
 <span class="smalltext" style="font-weight: 400;">{$forum['description']}</span>{$forum_viewers_text}{$modlist}{$subforums}
 </td>
@@ -3474,12 +3474,7 @@ jQuery(function($) {
 							<input type="hidden" name="postthread" value="1" />
 						</fieldset>
 						</form>]]></template>
-		<template name="header_welcomeblock_guest" version="1813"><![CDATA[<span class="float_right">
-		<ul class="menu top_links" id="znikacz" style="margin-left: 75%;" >
-			<li><a href="{$mybb->settings['bburl']}/member.php?action=login" onclick="$('#quick_login') class="login bradius">{$lang->welcome_login}</a> 
-			<li><a href="{$mybb->settings['bburl']}/member.php?action=register" >{$lang->welcome_register}</a>
-		</ul>
-	</span>
+		<template name="header_welcomeblock_guest" version="1813"><![CDATA[
 	<div class="modal login-modal" id="quick_login" style="display: none;">
 		<form method="post" action="{$mybb->settings['bburl']}/member.php">
 			<input name="action" type="hidden" value="do_login" />
@@ -3526,7 +3521,9 @@ jQuery(function($) {
 		<a href="{$mybb->settings['bburl']}/memberlist.php">{$lang->toplinks_memberlist}</a>
 		<a href="{$mybb->settings['bburl']}/misc.php?action=help" class="help">{$lang->toplinks_help}</a>
 		<a href="{$mybb->settings['bburl']}/search.php">{$lang->toplinks_search}</a>
-		<a href="/" style="font-size:15px;" class="icon" onclick="myFunction()">☰</a>
+		<a href="/" style="font-size:15px;" class="icon" onclick="myFunction()"></a>
+		<span style="float_right;"><a href="{$mybb->settings['bburl']}/member.php?action=login" onclick="$('#quick_login') class="login bradius">{$lang->welcome_login}</a> 
+		<a href="{$mybb->settings['bburl']}/member.php?action=register" >{$lang->welcome_register}</a></span>
 	</div>
 </div>
 <div class="lower">
@@ -4012,7 +4009,7 @@ if(use_xmlhttprequest == "1")
 <div class="profcontainer">
 	<div class="left-sidebar">
 		<div class="sidebar-container" style="border: 1px solid #262626;">
-			<div class="thead profile-side" style="background: #262626; border: 1px solid #262626;>{$lang->users_forum_info}</div>
+			<div class="thead profile-side" style="height:100px; background: #262626; border: 1px solid #262626;>{$lang->users_forum_info}</div>
 			<div class="sidebar-inner">
 				<span class="float_left clr_drk">{$lang->joined}</span>
 				<span class="float_right"><strong>{$memregdate}</strong></span><br />
