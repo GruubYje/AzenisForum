@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme name="Flatty" version="1814">
 	<properties>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<templateset><![CDATA[2]]></templateset>
 		<editortheme><![CDATA[mybb.css]]></editortheme>
 		<imgdir><![CDATA[images/flatty]]></imgdir>
@@ -3516,14 +3515,16 @@ jQuery(function($) {
 	<script type="text/javascript">
 		$("#quick_login input[name='url']").val($(location).attr('href'));
 	</script>
+	<span style="float:right; padding: 5px; font-size: 14px;">
+		<a href="{$mybb->settings['bburl']}/member.php?action=login" onclick="$('#quick_login') class="login bradius" style="padding-right:5px;">{$lang->welcome_login}</a> 
+		<a href="{$mybb->settings['bburl']}/member.php?action=register" >{$lang->welcome_register}</a>
+	</span>
 	<div class="topnav" id="myTopnav">
 		<a href="{$mybb->settings['bburl']}/sklep.php">Sklep 24/7</a>
 		<a href="{$mybb->settings['bburl']}/memberlist.php">{$lang->toplinks_memberlist}</a>
 		<a href="{$mybb->settings['bburl']}/misc.php?action=help" class="help">{$lang->toplinks_help}</a>
 		<a href="{$mybb->settings['bburl']}/search.php">{$lang->toplinks_search}</a>
 		<a href="/" style="font-size:15px;" class="icon" onclick="myFunction()"></a>
-		<span style="float_right;"><a href="{$mybb->settings['bburl']}/member.php?action=login" onclick="$('#quick_login') class="login bradius">{$lang->welcome_login}</a> 
-		<a href="{$mybb->settings['bburl']}/member.php?action=register" >{$lang->welcome_register}</a></span>
 	</div>
 </div>
 <div class="lower">
